@@ -1,0 +1,348 @@
+.Landing_Main,
+.Visit_Sec,
+.Benefits_Sec > div {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.Landing_Main {
+  display: flex;
+}
+
+.Main_Content {
+  width: 41.7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 40px;
+}
+
+.Main_Content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Margin_Left {
+  margin-left: 0.6em;
+}
+
+.Main_Header > h1 {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-secondary);
+}
+
+.Main_Header {
+  font-size: clamp(3rem, 2.3161rem + 3.4195vw, 5.5625rem);
+}
+
+.Main_Sub_Header {
+  width: 60%;
+  align-self: flex-end;
+  margin-right: 30px;
+  padding: 0 20px;
+}
+
+.Main_Sub_Header > p {
+  color: var(--text-secondary);
+  line-height: 1.4em;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.Main_Sub_Header > span a,
+.Visit_Content > span > a,
+.Appointment_Content_ActionLink > span > a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.Main_Image {
+  flex: 58.3%;
+  padding: 0 20px;
+}
+
+.Main_Image img {
+  width: 100%;
+}
+
+/* Visit Us Page */
+
+.Visit_Sec {
+  padding: 100px 20px;
+}
+
+.Visit_Sec .Content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Visit_Sec .Content p {
+  color: var(--text-secondary);
+  font-family: var(--font-secondary);
+}
+
+.Visit_Sec .Content h2 {
+  font-family: var(--font-secondary);
+  max-width: 630px;
+}
+
+.Visit_Sec .Content h3 {
+  max-width: 730px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.Visit_sec_Details {
+  display: flex;
+  margin-top: 50px;
+}
+
+.Visit_Image_Wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.Visit_Content {
+  flex: 1;
+  padding-left: 10%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Visit_Image_Wrapper > img {
+  max-width: 425px;
+}
+
+.Visit_Content p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+.Visit_Content > h3 {
+  font-size: 18px;
+}
+
+.Visit_Content > h1 {
+  font-size: 36px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+/* Benefits Sections */
+
+.Benefits_Sec {
+  background-color: white;
+  color: var(--bg-primary-black);
+}
+
+.Benefits_Sec > div {
+  padding: 100px 20px;
+}
+
+.Benefits_Sec > div > p {
+  color: var(--text-secondary);
+  font-family: var(--font-secondary);
+  margin-bottom: 30px;
+}
+
+.Benefits_Sec > div > h2 {
+  max-width: 600px;
+  font-family: var(--font-secondary);
+}
+
+.Steps_grid {
+  margin-top: 50px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Steps_grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+
+.Steps_grid > div > h2 {
+  font-family: var(--font-secondary);
+}
+
+.Steps_grid > div > p {
+  font-size: 18px;
+}
+
+/* Video Section */
+
+.Video_sec {
+  position: relative;
+}
+
+.Video_sec::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.Video_wrapper {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  min-height: 635px;
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.Video_wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Appointment Section*/
+
+.Appointment_sec {
+  position: relative;
+}
+
+.Appointment_sec > div {
+  position: relative;
+  z-index: 5;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 120px 20px;
+}
+
+.Appointment_Main p {
+  font-family: var(--font-secondary);
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.Appointment_Main h2 {
+  font-family: var(--font-secondary);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.Appointment_Content {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.Appointment_Content_Grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.Appointment_Content_Grid p {
+  line-height: 1.5em;
+}
+
+.Appointment_Content_ActionLink {
+  margin-top: 30px;
+}
+
+.Appointment_sec .Bg_image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: max(20%, 200px);
+}
+
+/* Testomonials Section */
+
+.Testimonials_sec{
+  background-color: var(--text-white);
+  color: var(--bg-primary-black);
+  padding: 100px 20px;
+}
+
+.Testimonials_Wrapper{
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.Testimonials_Details p,
+.Testimonials_Details h2{
+  font-family: var(--font-secondary);
+}
+
+.Testimonials_Details p{
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.Testimonials_Details h2{
+  max-width: 500px;
+}
+
+@media (max-width: 1080px) {
+  .Landing_Main {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Main_Content,
+  .Main_Image {
+    width: 100%;
+  }
+  .Main_Header > h1 {
+    width: auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .Visit_sec_Details {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Steps_grid > div {
+    gap: 20px;
+  }
+  .Steps_grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .Video_wrapper{
+    min-height: 0;
+    width: 100%;
+  }
+  .Video_wrapper > div{
+    height: 337px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Visit_Image_Wrapper > img,
+  .Visit_Content {
+    width: 100%;
+    padding: 0;
+  }
+  .Main_Sub_Header {
+    width: auto;
+  }
+}
+
+@media (max-width:380px){
+  .Appointment_Content_Grid{
+    grid-template-columns: 1fr;
+  }
+}

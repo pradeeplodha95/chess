@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Caslon Text", serif;
+}
+
+html,
+body {
+  background-color: var(--bg-primary-black);
+  color: white;
+}
+
+:root {
+  --bg-primary-black: rgb(23, 23, 23);
+  --text-white: rgb(255, 255, 255);
+  --text-secondary: rgb(162, 162, 162);
+
+  --font-secondary: "Fira Sans", sans-serif;
+}
+
+.section-sub-heading {
+  font-size: 14px;
+}
+
+.section-heading {
+  font-size: clamp(1.75rem, 1.5498rem + 1.0008vw, 2.5rem);
+}
+
+.section-24px {
+  font-size: clamp(1.125rem, 1.0249rem + 0.5004vw, 1.5rem);
+}
